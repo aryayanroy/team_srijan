@@ -1,0 +1,133 @@
+:root{
+    font-size: 16px;
+    --bs-primary: #B71C1C;
+    --bs-primary-rgb: 183, 28, 28;
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  font-family: "Bebas Neue", sans-serif;
+}
+h1, .h1{
+    font-size: calc(2.4em + 1.6vw);
+}
+h2, .h2{
+    font-size: calc(2.2em + 1.4vw);
+}
+h3, .h3{
+    font-size: calc(2em + 1.2vw);
+}
+h4, .h4{
+    font-size: calc(1.8em + 1vw);
+}
+h5, .h5{
+    font-size: calc(1.6em + 0.8vw);
+}
+h6, .h6{
+    font-size: calc(1.4em + 0.6vw);
+}
+header{
+    background: url(../images/header-bg-left.webp) left / contain no-repeat, url(../images/header-bg-right.webp) right / contain no-repeat #B71C1C;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+header .nav-link{
+    font-size: 1.4em;
+    font-family: "Bebas Neue", sans-serif;
+}
+header a.nav-link{
+    position: relative;
+}
+header a.nav-link::after{
+    content: "";
+    position: absolute;
+    height: 0.2em;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    transform: translateX(-50%);
+    transition: width 0.2s;
+}
+header a.nav-link:hover::after{
+    width: 50%;
+}
+.dropdown-menu{
+    min-width: 200px;
+    padding: 6px;
+    border-radius: 10px;
+}
+.dropdown-item{
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+#right-menu{
+    height: auto;
+    color: white;
+    background: url(../images/right-menu-bg-top.webp) top / cover no-repeat #B71C1C;
+}
+#right-menu .list-group-item{
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-color: #D32F2F;
+    border-width: 0 0 2px 0;
+    background: transparent;
+}
+#right-menu button.list-group-item{
+    text-align: left;
+}
+footer{
+    background: url(../images/footer-bg.webp) center / cover no-repeat #263238;
+}
+footer li:not(:last-child){
+    margin-bottom: 1em;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+/*laptop*/
+@media screen and (min-width: 768px){
+    .dropdown-toggle::after{
+        transition: transform 0.3s;
+    }
+    .dropdown-toggle:hover::after{
+        transform: rotate(180deg);
+    }
+    .dropdown-item:hover{
+        padding-left: 14px;
+        color: white;
+        background-color: #D32F2F;
+    }
+    .card{
+        transition: all 0.3s;
+    }
+    .card-img-top{
+        transition: all 0.3s;
+    }
+    .card:hover{
+        box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.3);
+    }
+    .card:hover .card-img-top{
+        border-radius: 10px;
+        scale: 1.1;
+        box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.3);
+    }
+}
+
+
+/*mobile*/
+
+@media screen and (max-width: 991.98px){
+    header{
+        background: url(../images/header-bg-right.webp) right / contain no-repeat #B71C1C;
+    }
+}
+@media screen and (max-width: 767.98px){
+    header{
+        background: url(../images/header-bg-right.webp) left / cover no-repeat #B71C1C;
+    }
+}

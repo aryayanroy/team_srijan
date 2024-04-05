@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Srijan | Formula Student Club</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:slnt,wght@-5,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header class="sticky-top">
+        <div class="container-xxl">
+            <nav class="navbar">
+                <a href="#" class="navbar-brand"><img src="assets/images/teamsrijan-logo.webp" alt="Team Srijan Logo" width="96"></a>
+                <ul class="nav d-none d-md-flex">
+                    <li class="nav-item"><a href="#" class="nav-link link-light">HOME</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-light">GARAGE</a></li>
+                    <li class="nav-item dropdown">
+                        <button type="button" class="nav-link link-light dropdown-toggle" data-bs-toggle="dropdown">FINANCE</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">SPONSORS</a></li>
+                            <li><a href="#" class="dropdown-item">CROWDFUNDING</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link link-light">COMPETITIONS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-light">MILESTONES</a></li>
+                    <li class="nav-item dropdown">
+                        <button type="button" class="nav-link link-light dropdown-toggle" data-bs-toggle="dropdown">ABOUT</button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a href="#" class="dropdown-item">WHO WE ARE</a></li>
+                            <li><a href="#" class="dropdown-item">CREWS</a></li>
+                            <li><a href="#" class="dropdown-item">GALLERY</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-link link-light d-md-none" data-bs-toggle="offcanvas" data-bs-target="#right-menu"><i class="fa-solid fa-ellipsis fa-2xl"></i></button>
+            </nav>
+        </div>
+    </header>
+    <aside id="right-menu" class="offcanvas offcanvas-bottom">
+        <div class="offcanvas-header justify-content-between">
+            <h3 class="offcanvas-title">MENU</h3>
+            <button class="btn btn-link link-light" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item">HOME</a>
+                <a href="#" class="list-group-item">GARAGE</a>
+                <button type="button" class="list-group-item dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu-finance">FINANCE</button>
+                <div id="menu-finance" class="collapse collapse-horizontal ps-3">
+                    <div class="list-group list-group-flush">
+                        <a href="#" class="list-group-item">SPONSORS</a>
+                        <a href="#" class="list-group-item">CROWDFUNDING</a>
+                    </div>
+                </div>
+                <a href="#" class="list-group-item">COMPETITIONS</a>
+                <a href="#" class="list-group-item">MILESTONES</a>
+                <button type="button" class="list-group-item dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu-about">ABOUT</button>
+                <div id="menu-about" class="collapse collapse-horizontal ps-3">
+                    <div class="list-group list-group-flush">
+                        <a href="#" class="list-group-item">WHO ARE WE</a>
+                        <a href="#" class="list-group-item">CREWS</a>
+                        <a href="#" class="list-group-item">GALLERY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="flex-grow-1 py-3">
+        <article class="container-xxl">
+            <section id="hero-carousel" class="carousel slide carousel-fade">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://cdn-3.motorsport.com/images/amp/YKEWQNB0/s6/sebastian-vettel-ferrari-sf100.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.ferrari.com/cms/network/media/img/resize/62e6b8b41f555a1c493c4082-scuderia-ferrari-hungarian-gp-2022-race-report-desk" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.ferrari.com/cms/network/media/img/resize/62e245f5771eaa067937bd85-296gt3_intro-project_focus-1-resize" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#hero-carousel" data-bs-slide="prev"></button>
+                <button type="button" class="carousel-control-next" data-bs-target="#hero-carousel" data-bs-slide="next"></button>
+            </section>
+        </article>
+    </main>
+    <footer class="px-3 py-5 px-sm-5 text-white">
+        <div class="row gy-5 gx-3">
+            <ul class="col-sm-4 col-md-3 list-unstyled mb-0">
+                <li class="h6">ABOUT</li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Institute</a></li>
+                <li><a href="#">Our Crews</a></li>
+                <li><a href="#">Our Cars</a></li>
+                <li><a href="#">Newsletters</a></li>
+            </ul>
+            <ul class="col-sm-4 col-md-3 list-unstyled mb-0">
+                <li class="h6">COMPETITIONS</li>
+                <li><a href="#">Formula Bharat</a></li>
+                <li><a href="#">Formula Green</a></li>
+                <li><a href="#">Formula Germany</a></li>
+                <li><a href="#">Formula Italy</a></li>
+            </ul>
+            <ul class="col-sm-4 col-md-3 list-unstyled mb-0">
+                <li class="h6">SOCIAL</li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f me-2"></i><span>Facebook</span></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram me-2"></i><span>Instagram</span></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter me-2"></i><span>Twitter/X</span></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in me-2"></i><span>LinkedIn</span></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube me-2"></i><span>YouTube</span></a></li>
+            </ul>
+            <ul class="col-sm-4 col-md-3 list-unstyled mb-0">
+                <li class="h6">CONTACT</li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Sponsorship</a></li>
+            </ul>
+        </div>
+        <hr class="my-sm-5">
+        <div>Copyright © Team Srijan 2024. All Rights Reserved.</div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</html>
