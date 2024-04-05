@@ -1,7 +1,11 @@
 :root{
     font-size: 16px;
-    --bs-primary: #B71C1C;
-    --bs-primary-rgb: 183, 28, 28;
+    --bs-danger: #B71C1C;
+    --bs-danger-rgb: 183, 28, 28;
+    --bs-warning: #F57F17;
+    --bs-warning-rgb: 245, 127, 23;
+    --bs-primary: #1A237E;
+    --bs-primary-rgb: 26, 35, 126;
 }
 body{
     font-family: "Inter", sans-serif;
@@ -87,6 +91,17 @@ footer li:not(:last-child){
 footer a{
     color: white;
     text-decoration: none;
+}
+.carousel-item{
+    height: 100%;
+}
+.carousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.owl-carousel img{
+    object-fit: fill;
 }
 
 /*laptop*/
