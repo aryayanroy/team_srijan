@@ -82,6 +82,9 @@ header a.nav-link:hover::after{
 #right-menu button.list-group-item{
     text-align: left;
 }
+main{
+    background: url(../images/curls-bg-top.webp) top right / contain fixed no-repeat, url(../images/curls-bg-bottom.webp) bottom left / contain fixed no-repeat, url(../images/dots-bg.webp) center / cover fixed no-repeat;
+}
 footer{
     background: url(../images/footer-bg.webp) center / cover no-repeat #263238;
 }
@@ -144,5 +147,8 @@ footer a{
 @media screen and (max-width: 767.98px){
     header{
         background: url(../images/header-bg-right.webp) left / cover no-repeat #B71C1C;
+    }  
+    main{
+        background: url(../images/curls-bg-top.webp) center / contain fixed no-repeat, url(../images/dots-bg.webp) center / cover fixed no-repeat;
     }
 }
