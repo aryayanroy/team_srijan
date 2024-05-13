@@ -33,7 +33,7 @@ h6, .h6{
 }
 header{
     background: url(../images/header-bg-left.webp) left / contain no-repeat, url(../images/header-bg-right.webp) right / contain no-repeat #B71C1C;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s;
 }
 header .nav-link{
     font-size: 1.4em;
@@ -95,6 +95,9 @@ footer a{
     color: white;
     text-decoration: none;
 }
+.card-img-top{
+    object-fit: cover;
+}
 
 /*laptop*/
 @media screen and (min-width: 768px){
@@ -108,20 +111,6 @@ footer a{
         padding-left: 14px;
         color: white;
         background-color: #D32F2F;
-    }
-    .card{
-        transition: all 0.3s;
-    }
-    .card-img-top{
-        transition: all 0.3s;
-    }
-    .card:hover{
-        box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.3);
-    }
-    .card:hover .card-img-top{
-        border-radius: 10px;
-        scale: 1.1;
-        box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.3);
     }
 }
 
