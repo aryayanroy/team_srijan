@@ -15,64 +15,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <header class="sticky-top">
-        <nav class="navbar">
-            <div class="container-xxl">
-                <a href="./" class="navbar-brand"><img src="assets/images/branding/teamsrijan-logo-light.webp" alt="Team Srijan Logo" width="96"></a>
-                <ul class="nav d-none d-md-flex">
-                    <li class="nav-item"><a href="garage" class="nav-link link-light">Garage</a></li>
-                    <li class="nav-item dropdown">
-                        <button type="button" class="nav-link link-light dropdown-toggle" data-bs-toggle="dropdown">Support</button>
-                       <ul class="dropdown-menu">
-                            <li><a href="sponsorship" class="dropdown-item">Sponsorship</a></li>
-                            <li><a href="crowdfunding" class="dropdown-item">Crowdfunding</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="competitions" class="nav-link link-light">Competitions</a></li>
-                    <li class="nav-item"><a href="milestones" class="nav-link link-light">Milestones</a></li>
-                    <li class="nav-item dropdown">
-                        <button type="button" class="nav-link link-light dropdown-toggle" data-bs-toggle="dropdown">Team</button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a href="overview" class="dropdown-item">Overview</a></li>
-                            <li><a href="crews" class="dropdown-item">Crews</a></li>
-                            <li><a href="newsletter" class="dropdown-item">Newsletter</a></li>
-                            <li><a href="gallery" class="dropdown-item">Gallery</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <button type="button" class="btn btn-link link-light d-md-none" data-bs-toggle="offcanvas" data-bs-target="#right-menu"><i class="fa-solid fa-ellipsis fa-2xl"></i></button>
-            </div>
-        </nav>
-    </header>
-    <aside id="right-menu" class="offcanvas offcanvas-bottom">
-        <div class="offcanvas-header justify-content-between">
-            <h3 class="offcanvas-title">MENU</h3>
-            <button class="btn btn-link link-light" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark fa-2xl"></i></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="list-group list-group-flush">
-                <a href="garage" class="list-group-item">Garage</a>
-                <button type="button" class="list-group-item dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu-finance">Support</button>
-                <div id="menu-finance" class="collapse ps-3">
-                    <div class="list-group list-group-flush">
-                        <a href="sponsorship" class="list-group-item">Sponsorship</a>
-                        <a href="crowdfunding" class="list-group-item">Crowdfunding</a>
-                    </div>
-                </div>
-                <a href="competitions" class="list-group-item">Competitions</a>
-                <a href="milestones" class="list-group-item">Milestones</a>
-                <button type="button" class="list-group-item dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu-about">Team</button>
-                <div id="menu-about" class="collapse ps-3">
-                    <div class="list-group list-group-flush">
-                        <a href="overview" class="list-group-item">Overview</a>
-                        <a href="crews" class="list-group-item">Crews</a>
-                        <a href="newsletter" class="list-group-item">Newsletter</a>
-                        <a href="gallery" class="list-group-item">Gallery</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </aside>
+    <header id="page-header" class="sticky-top"></header>
     <main class="flex-grow-1 py-3">
         <article class="container-xxl">
             <section id="hero-carousel" class="carousel slide carousel-fade">
@@ -157,13 +100,13 @@
             <section class="row flex-row-reverse gx-0 rounded-4 overflow-hidden">
                 <div class="col-sm-6 col-md-5">
                     <div class="ratio ratio-4x3 h-100">
-                        <img src="assets/images/home/bitmesra.webp" alt="" class="object-fit-cover">
+                        <img src="assets/images/home/bitmesra.webp" alt="Birla Institute of Technology - Mesra" class="object-fit-cover">
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-7 p-4 text-white" style="background: url(assets/images/home/dots-top.webp) top left / contain no-repeat, url(assets/images/home/dots-bottom.webp) bottom right / contain no-repeat #1A237E">
                     <h3>OUR INSTITUTE</h3>
                     <p>Established in 1955 by the visionary Industrialist Mr. B.M. Birla, Birla Institute of Technology, Mesra is a premier technical institute and a deemed university under the governance of the C.K. Birla group. 64 years down the line, the zeal to carry forward our mission and vision still burns in our hearts. Every BITian works with a single agenda of making BIT a globally recognized academic institution in consonance with the social, economic, and ecological environment, striving continuously for excellence in education, research, and technological services to the national needs.</p>
-                    <a href="#" class="link-light text-decoration-none"><span>View more</span><i class="fa-solid fa-up-right-from-square ms-2"></i></a>
+                    <a href="https://www.bitmesra.ac.in/" class="link-light text-decoration-none"><span>View more</span><i class="fa-solid fa-up-right-from-square ms-2"></i></a>
                 </div>
             </section>
             <hr>
@@ -180,40 +123,8 @@
             </section>
         </article>
     </main>
-    <footer class="px-3 py-5 px-sm-5 text-white">
-        <div class="row gy-5 gx-3">
-            <ul class="col-6 col-sm-4 col-md-3 list-unstyled mb-0">
-                <li class="h6">ABOUT</li>
-                <li><a href="about">About Us</a></li>
-                <li><a href="https://www.bitmesra.ac.in/" target="_blank">Our Institute</a></li>
-                <li><a href="crews">Our Crews</a></li>
-                <li><a href="garage">Our Cars</a></li>
-                <li><a href="newsletters">Newsletters</a></li>
-            </ul>
-            <ul class="col-6 col-sm-4 col-md-3 list-unstyled mb-0">
-                <li class="h6">COMPETITIONS</li>
-                <li><a href="https://www.formulabharat.com/" target="_blank">Formula Bharat</a></li>
-                <li><a href="https://isnee.in/fgi/" target="_blank">Formula Green</a></li>
-                <li><a href="https://www.formulastudent.de/teams/fse/details/tid/1132/" target="_blank">Formula Germany</a></li>
-                <li><a href="https://www.formula-ata.it/formula-sae-italy/" target="_blank">Formula Italy</a></li>
-            </ul>
-            <ul class="col-6 col-sm-4 col-md-3 list-unstyled mb-0">
-                <li class="h6">SOCIAL</li>
-                <li><a href="https://www.facebook.com/TeamSrijan/" target="_blank"><i class="fa-brands fa-facebook-f me-2"></i><span>Facebook</span></a></li>
-                <li><a href="https://www.instagram.com/team_srijan/" target="_blank"><i class="fa-brands fa-instagram me-2"></i><span>Instagram</span></a></li>
-                <li><a href="https://twitter.com/srijan_fsae" target="_blank"><i class="fa-brands fa-x-twitter me-2"></i><span>Twitter/X</span></a></li>
-                <li><a href="https://www.linkedin.com/company/team-srijan/" target="_blank"><i class="fa-brands fa-linkedin-in me-2"></i><span>LinkedIn</span></a></li>
-                <li><a href="https://www.youtube.com/@team_srijan" target="_blank"><i class="fa-brands fa-youtube me-2"></i><span>YouTube</span></a></li>
-            </ul>
-            <ul class="col-md-3 list-unstyled mb-0">
-                <li class="h6">CONTACT</li>
-                <li><i class="fa-solid fa-envelope me-2"></i><a href="mailto:teamsrijan@bitmesra.ac.in">teamsrijan@bitmesra.ac.in</a></li>
-                <li><i class="fa-solid fa-location-dot me-2"></i><span>Production Department<br>Birla Institute of Technology - Mesra<br>Ranchi, Jharkhand - 835215</span></li>
-            </ul>
-        </div>
-        <hr class="my-sm-4">
-        <div>Copyright © Team Srijan. All Rights Reserved.</div>
-    </footer>
+    <aside id="bottom-menu" class="offcanvas offcanvas-bottom"></aside>
+    <footer id="page-footer" class="px-3 py-5 px-sm-5 text-white"></footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
