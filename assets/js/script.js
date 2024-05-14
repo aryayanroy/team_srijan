@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    var load_path = "assets/html/";
+    var load_path = "/assets/html/";
 
     $.get(load_path+"head.html", function(data){
         $("head").prepend(data);
